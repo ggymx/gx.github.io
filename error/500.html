@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <title>站点创建成功-phpstudy for windows</title>
+  <title>500 错误 - phpstudy</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="renderer" content="webkit">
@@ -25,12 +25,12 @@
       font-size: 26px;
     }
     .content{
-      width: 45%;
+      width: 40%;
       margin: 0 auto;
      
     }
     .content >div{
-      margin-top: 200px;
+      margin-top: 50px;
       padding: 20px;
       background: #d9edf7;  
       border-radius: 12px;
@@ -48,16 +48,27 @@
 <body>
   <div class="content">
       <div>
-           <h1>站点创建成功</h1>
+           <h1>HTTP 500 - Internal Server Error 服务器内部错误</h1>
         <dl>
-          <dt>目录说明:</dt>
-          <dd>1：网站目录：/phpstudy安装目录/www/站点域名/</dd>
-          <dd>2：错误提示页面：/phpstudy安装目录/www/站点域名/error/</dd>
-          <dd>3：你可以删除或者修改该目录下的所有文件</dd>
-          <dt>操作注意事项：</dt>
-          <dd>1：新建站点、数据库、FTP可在phpstudy面板操作，数据库可在环境中下载数据库管理软件等；</dd>
-          <dd>2：将网站程序放到站点目录时请使用复制，剪切可能造成程序文件权限不正确；</dd>
-         
+          <dt>错误说明：服务器内部错误，无法完成请求</dt>
+          <dt>原因1：伪静态规则不正确</dt>
+		  <dd>解决办法：</dd>
+          <dd>修改伪静态。</dd>
+          <dt>原因2：php版本与网站程序不兼容</dt>
+		  <dd>解决办法：</dd>
+          <dd>更换PHP版本。</dd>
+		  <dt>原因3：网站无法连接至数据库</dt>
+		  <dd>解决办法：</dd>
+          <dd>正确修改站点的数据库配置文件。</dd>
+		  <dt>原因4：php禁用了某一函数，需要开启</dt>
+		  <dd>解决办法：</dd>
+          <dd>开启相关禁用函数。</dd>
+		  <dt>原因5：站点需要访问站外目录</dt>
+		  <dd>解决办法：</dd>
+          <dd>关闭防跨站处理。</dd>
+		  <dt>原因6：源码本身有BUG</dt>
+		  <dd>解决办法：</dd>
+          <dd>修复源码bug。</dd>
         </dl>
         <div>使用手册，视频教程，BUG反馈，官网地址： <a href="https://www.xp.cn"  target="_blank">www.xp.cn</a> </div>
     

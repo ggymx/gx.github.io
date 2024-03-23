@@ -2,7 +2,7 @@
 <html lang="zh-CN">
 <head>
   <meta charset="utf-8">
-  <title>站点创建成功-phpstudy for windows</title>
+  <title>505 错误 - phpstudy</title>
   <meta name="keywords" content="">
   <meta name="description" content="">
   <meta name="renderer" content="webkit">
@@ -48,16 +48,15 @@
 <body>
   <div class="content">
       <div>
-           <h1>站点创建成功</h1>
+           <h1>HTTP 505 - HTTP Version Not Supported</h1>
         <dl>
-          <dt>目录说明:</dt>
-          <dd>1：网站目录：/phpstudy安装目录/www/站点域名/</dd>
-          <dd>2：错误提示页面：/phpstudy安装目录/www/站点域名/error/</dd>
-          <dd>3：你可以删除或者修改该目录下的所有文件</dd>
-          <dt>操作注意事项：</dt>
-          <dd>1：新建站点、数据库、FTP可在phpstudy面板操作，数据库可在环境中下载数据库管理软件等；</dd>
-          <dd>2：将网站程序放到站点目录时请使用复制，剪切可能造成程序文件权限不正确；</dd>
-         
+          <dt>错误说明：HTTP 版本不受支持。</dt>
+          <dt>原因1：您的 Web 服务器不支持，或拒绝支持客户端（如您的浏览器）在发送给服务器的 HTTP 请求数据流中指定的 HTTP 协议版本</dt>
+		  <dd>解决办法：</dd>
+          <dd>升级您的 Web 服务器软件。</dd>
+          <dt>原因2：http请求格式的错误</dt>
+		  <dd>解决办法：</dd>
+          <dd>对照一下自己的代码，从打印的信息中终于找到问题所在。可能在请求后面多加了一个空格。http协议真是很严格了。</dd>
         </dl>
         <div>使用手册，视频教程，BUG反馈，官网地址： <a href="https://www.xp.cn"  target="_blank">www.xp.cn</a> </div>
     
